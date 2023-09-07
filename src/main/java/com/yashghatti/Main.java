@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws UnsupportedEncodingException {
-        Grid threeByThree = Grid.fromDimensions(5, 5, 1, 1, 4, 1);
-        List<Path> calculatedPaths = threeByThree
+        Grid fiveByFive = Grid.fromDimensions(5, 5, 1, 1, 4, 1);
+        List<Path> calculatedPaths = fiveByFive
                 .calculatePaths()
                 .stream().sorted(
                         Comparator.comparing(path -> path.getTraversal().size())
